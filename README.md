@@ -392,7 +392,7 @@ Maximum upload size:
 
 # 👨‍💻 Author
 
-**Francis Mwariri**
+**Ruth Njeri**
 
 Bachelor of Business Information Technology (BBIT)
 
