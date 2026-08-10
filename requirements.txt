@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+psycopg2-binary
+python-dotenv
+python-jose
+passlib
+bcrypt
+aiofiles
+slowapi
+httpx
+python-multipart
+psutil
+pytest
+aiofiles

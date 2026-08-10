@@ -1,0 +1,82 @@
+2026-08-10 21:47:11,859 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2026-08-10 21:47:56,281 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-08-10 21:47:56,281 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:47:56,306 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-08-10 21:47:56,306 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:47:56,322 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-08-10 21:47:56,327 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:47:56,336 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-08-10 21:47:56,354 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:47:56,354 - sqlalchemy.engine.Engine - INFO - [generated in 0.00105s] {'table_name': 'user', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:47:56,391 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:47:56,391 - sqlalchemy.engine.Engine - INFO - [cached since 0.03574s ago] {'table_name': 'document', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:47:56,397 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:47:56,399 - sqlalchemy.engine.Engine - INFO - [cached since 0.04304s ago] {'table_name': 'webhook', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:47:56,404 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE webhook (
+	id SERIAL NOT NULL, 
+	webhook_url VARCHAR NOT NULL, 
+	event_type VARCHAR NOT NULL, 
+	is_active BOOLEAN NOT NULL, 
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-08-10 21:47:56,408 - sqlalchemy.engine.Engine - INFO - [no key 0.00258s] {}
+2026-08-10 21:47:56,613 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-08-10 21:48:45,516 - main - INFO - GET / - Status: 307 - Time: 0.021s
+2026-08-10 21:48:45,670 - main - INFO - GET /docs - Status: 200 - Time: 0.003s
+2026-08-10 21:48:46,806 - main - INFO - GET /openapi.json - Status: 200 - Time: 0.214s
+2026-08-10 21:50:12,481 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-08-10 21:50:12,481 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:50:12,494 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-08-10 21:50:12,496 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:50:12,501 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-08-10 21:50:12,503 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:50:12,508 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-08-10 21:50:12,537 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:50:12,541 - sqlalchemy.engine.Engine - INFO - [generated in 0.00231s] {'table_name': 'user', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:50:12,563 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:50:12,565 - sqlalchemy.engine.Engine - INFO - [cached since 0.02703s ago] {'table_name': 'document', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:50:12,572 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:50:12,574 - sqlalchemy.engine.Engine - INFO - [cached since 0.03606s ago] {'table_name': 'webhook', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:50:12,579 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-08-10 21:51:01,528 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-08-10 21:51:01,532 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:51:01,539 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-08-10 21:51:01,540 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:51:01,548 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-08-10 21:51:01,551 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-08-10 21:51:01,560 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-08-10 21:51:01,576 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:51:01,577 - sqlalchemy.engine.Engine - INFO - [generated in 0.00142s] {'table_name': 'user', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:51:01,586 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:51:01,586 - sqlalchemy.engine.Engine - INFO - [cached since 0.01031s ago] {'table_name': 'document', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:51:01,590 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-08-10 21:51:01,590 - sqlalchemy.engine.Engine - INFO - [cached since 0.01719s ago] {'table_name': 'webhook', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-10 21:51:01,597 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-08-10 21:51:04,299 - main - INFO - GET /docs - Status: 200 - Time: 0.004s
+2026-08-10 21:51:04,859 - main - INFO - GET /openapi.json - Status: 200 - Time: 0.172s
